@@ -2,7 +2,9 @@ ThinkPHP5.1内实现类似Laravel内的crontab定时任务
 
 一、说明
 1，项目实现类似Laravel内的Crontab模块，在TP5.1中实现定时任务（分钟级）。
+
 2，项目核心代码在application下的crontab模块，入口为crontab目录下的crontab.php,须搭配crontab配置文件。
+
 3，项目须调用外部命令（shell 命令），暂只支持Linux，确保php.ini中没有禁用exec()方法。
 
 二、使用方法
