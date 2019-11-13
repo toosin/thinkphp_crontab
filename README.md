@@ -15,4 +15,5 @@ ThinkPHP5.1内实现类似Laravel内的crontab定时任务
 2，定时任务写在contab目录下的controller目录下，配置文件中的command项，配置为对应的：crontab(模块名)/controller名/方法名（任务）
 
 3，配置Linux定时任务：以Cli模式执行crontab模块下的Crontab控制器中的task方法。(task方法负责调配配置文件中你配置的任务，所以Linux的crontab中只需配置本任务)
+
 配置例如：* * * * * /usr/local/bin/php /home/www/thinkphp_crontab/crontab/crontab.php crontab/Crontab/task >/dev/null 2>&1
